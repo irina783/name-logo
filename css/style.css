@@ -116,7 +116,7 @@
     bottom: 35%;
     left: 40%;
     opacity: 0;
-    animation: logo_anim 36s linear infinite;
+    animation: logo_anim 30s linear infinite;
 }
 .name-logo .fullname{
     left: 10%;
@@ -127,19 +127,19 @@
 	animation-delay: 0s;
 }
 .name-logo div.r{
-	animation-delay: 6s;
+	animation-delay: 5s;
 }
 .name-logo div.y{
-	animation-delay: 12s;
+	animation-delay: 10s;
 }
 .name-logo div.n {
-	animation-delay: 18s;
+	animation-delay: 15s;
 }
 .name-logo div.a {
-	animation-delay: 24s;
+	animation-delay: 20s;
 }
 .name-logo div.fullname{
-    animation-delay: 30s;
+    animation-delay: 25s;
 
 }
 
@@ -207,7 +207,7 @@
     text-transform: uppercase;     
     text-align: center;
     animation-name: anim-logo;                    
-    animation-duration: 6s;               
+    animation-duration: 5s;               
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -225,7 +225,7 @@
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 16px, green 16px, red 50%), repeating-linear-gradient(45deg, yellow, yellow 16px, yellow 16px, red 50%);
     background-size: 64px 64px, 48px 48px;    
     animation-name: anim;                    
-    animation-duration: 6s;               
+    animation-duration: 5s;               
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;

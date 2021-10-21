@@ -109,7 +109,6 @@
 
 
 
-
 .name-logo .fullname,
 .name-logo .logo{
     z-index: 10;
@@ -117,7 +116,7 @@
     bottom: 35%;
     left: 40%;
     opacity: 0;
-    animation: logo_anim 60s linear infinite;
+    animation: logo_anim 36s linear infinite;
 }
 .name-logo .fullname{
     left: 2%;
@@ -128,22 +127,20 @@
 	animation-delay: 0s;
 }
 .name-logo div.r{
-	animation-delay: 10s;
+	animation-delay: 6s;
 }
 .name-logo div.y{
-	animation-delay: 20s;
+	animation-delay: 12s;
 }
 .name-logo div.n {
-	font-size: 200px;
-	animation-delay: 30s;
+	animation-delay: 18s;
 }
 .name-logo div.a {
-	font-size: 200px;
-	animation-delay: 40s;
+	animation-delay: 24s;
 }
 .name-logo div.fullname{
-	font-size: 200px;
-    animation-delay: 50s;
+    animation-delay: 30s;
+
 }
 
 
@@ -170,22 +167,28 @@
 @keyframes logo_anim {
     0% {
         opacity: 0;
-        transform: translateY(-200%);
+        transform: translateY(-200%) scale(1);
     }
     10% {
         opacity: 1;
-        transform: translateY(0%);
+        transform: translateY(0%) scale(1);
     }
     20% {
         opacity: 1;
-        transform: translateY(0%);
+        transform: translateY(0%) scale(1.3);
     }
     23% {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateY(100%) scale(1);
     }
-    26% { opacity: 0 }
-    100% { opacity: 0 }
+    26% { 
+        opacity: 0;
+        transform: scale(1);
+    }
+    100% { 
+        opacity: 0;
+        transform: scale(0);
+    }
 }
 
 
@@ -202,7 +205,13 @@
     background: white;         
     overflow: hidden;
     text-transform: uppercase;     
-    text-align: center;          
+    text-align: center;
+    animation-name: anim-logo;                    
+    animation-duration: 6s;               
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+          
 }
 #perelive:before {          
     content: '';             
@@ -216,19 +225,34 @@
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 16px, green 16px, red 50%), repeating-linear-gradient(45deg, yellow, yellow 16px, yellow 16px, red 50%);
     background-size: 64px 64px, 48px 48px;    
     animation-name: anim;                    
-    animation-duration: 10s;               
+    animation-duration: 6s;               
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 @keyframes anim {
-    from {
+    0% {
         background-position: 0 0;
     }
-    to {
+    50%, 100% {
         background-position: 100% 0;
-}}
+    }
+}
+@keyframes anim-logo {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+    23% {
+        transform: rotateX(25deg) rotateY(-6deg);
+    }
+    26% {
+        transform: rotateX(25deg) rotateY(6deg);
+    }
+    100% {
+        transform: rotateX(0) rotateY(0);
+    }
 
+}
 
 
 

@@ -6,9 +6,21 @@
 }
 .logo{
     position: relative;
+    margin-top: 5%;
     width: 300px;
     height: 300px;
     background-color: #fff;
+}
+.i{
+    width: 160px;
+    height: 300px;
+}
+.r{
+    width: 250px;
+    height: 300px;
+}
+.fullname{
+    margin-left: 30%;
 }
 .letter{
     position: absolute;
@@ -78,7 +90,7 @@
 .name-logo .logo,
 .name-logo .fullname{
     opacity: 0;
-    animation: logo_anim 3s ease-in 20s backwards;
+    animation: logo_anim 3s ease-in 25s infinite  backwards;
 }
 
 .name-logo div.i {
@@ -103,7 +115,7 @@
 	animation-delay: 15s;
 }
 .name-logo div.fullname .full {
-	animation: anim 10s linear 35s infinite;
+	animation: anim 10s linear 25s infinite;
 }
 
 
@@ -158,7 +170,7 @@
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 16px, green 16px, red 50%), repeating-linear-gradient(45deg, yellow, yellow 16px, yellow 16px, gold 50%);
     background-size: 64px 64px, 48px 48px;    
     animation-name: anim;                    
-    animation-duration: 10s;               
+    animation-duration: 3s;               
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
